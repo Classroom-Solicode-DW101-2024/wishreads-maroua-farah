@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+    <header>
+        <div class="logoImage"><img id="logo" src="img/LOGO.webp" alt=""></div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="navbar">Home</a></li>
+                <li><a href="wishlist.html" class="navbar">Wishlist</a></li>
+                <li><a href="aboutUs.html" class="navbar">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Here's Your WishList</h1>
+    <div class="inputSearch">
+        <input type="text" id="inputSearch" placeholder="Search for a book here...">
+        <button id="searchBtn" onclick="search()">Search</button>
+    </div>
+    <section class="cards">
+    </section>
+    <footer>
+        <p class="phone"><img src="img/phone.png">+212 6 98752288</p> 
+        <p class="email"><img src="img/email.png">ButterflyBooksLibrary@gmail.com</p>
+        <p class="location"><img src="img/location.png">Bir Chiffa, Tangier, Morocco 90060 </p> 
+    </footer>
+</body>
+<script>
+    let books=JSON.parse(localStorage.getItem("key"))
+    let section=document.getElementsByClassName('cards')[0];
+    for (let i = 0; i < books.length; i++) {
+                            const title = books[i].title;
+                            const description = books[i].description;
+                            const cover = books[i].cover;
+                            const pdf = books[i].pdf;
+                            const author = books[i].author;
+                            const releaseDate = books[i].releaseDate;
+                     bookElement=document.createElement('div');
+                     bookElement.className = `book${[i]}`;
+                     bookElement.innerHTML = `
+                         <img src="${cover}"><br>
+                         <div class="card-container">
+                         <p>${title}</p> 
+                         <p> ${author}</p>
+                         <p> It was release in :${releaseDate}</p>
+                         </div>
+                         <div class="buttons">
+                         <button value="readBook" onclick="readBook(this)">Read Book</button>
+                         <button value="detail" onclick="detail(this)">Book Details</button>
+                         <button value="remove" onclick="remove(this)">Remove Book</button>
+                          <input type="hidden" value="${i}">
+                         </div>
+    `;
+    section.appendChild(bookElement);
+    }
+    function remove(button){
+        let divBtn=button.parentElement.parentElement
+        let position = divBtn.querySelector('input').value
+        let books=JSON.parse(localStorage.getItem("key"))
+        books.splice(position,1)
+        localStorage.setItem("key",JSON.stringify(books))
+        divBtn.remove()
+        
+    }
+   function readBook(button){
+        let position=button.parentElement.parentElement.querySelector('input').value
+        let books=JSON.parse(localStorage.getItem("key"))
+        for (let i = 0; i < books.length; i++) {
+             books[i].pdf;
+            if(books[i].pdf===`${books[position].pdf}`)
+            window.location.href=`${books[position].pdf}`
+        }
+    }
+    function detail(button){
+    let position=button.parentElement.querySelector("input").value;
+    localStorage.setItem("detail",JSON.stringify(books[position]))
+    window.location.href="Details.html"
+}
+function search() {
+    let inputSearch = document.getElementById('inputSearch').value.toLowerCase(); 
+    let section=document.getElementsByClassName('cards')[0];
+    section.innerHTML = ''; 
+    for (let i = 0; i < books.length; i++) {
+        if (books[i].title.toLowerCase().includes(inputSearch)) {
+            const bookDiv=document.createElement('div');
+            bookDiv.className = "booksdiv";
+            bookDiv.innerHTML = `
+          <img src="${books[i].cover}">
+          <div class"bookInfos">
+            <p>${books[i].title}</p>
+            <p> ${books[i].author}</p>
+            </div>
+            <div class"Btns">
+                <button value="readBook" onclick="readBook(this)">Read Book</button>
+                <button value="detail" onclick="detail(this)">Book Details</button>
+                <button value="remove" onclick="remove(this)">Remove Book</button>
+                <input type="hidden" value="${i}">
+             </div>
+            `;
+            section.appendChild(bookDiv);
+        }
+    }
+}
+</script>
+</html>

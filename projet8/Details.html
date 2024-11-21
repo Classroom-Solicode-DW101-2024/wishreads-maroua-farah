@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="details.css">
+      <title>Details</title>
+   </head>
+   <body>
+      <div class="container navbar">
+         <div class="logoImage">
+             <img id="logo" src="img/LOGO.webp" alt="Library Logo">
+         </div>
+         
+         <nav>
+             <ul>
+                <li><a href="index.html" class="navbar">Home</a></li>
+                <li><a href="wishlist.html" class="navbar">Wishlist</a></li>
+                <li><a href="aboutUs.html" class="navbar">About Us</a></li>
+             </ul>
+         </nav>
+     </div>
+     <h1>Details About This Book</h1>
+      <section class="cards">
+      </section>
+      <footer>
+         <p class="phone"><img src="img/phone.png"> +212 6 98752288</p> 
+         <p class="email"><img src="img/email.png"> ButterflyBooksLibrary@gmail.com</p>
+         <p class="location"><img src="img/location.png"> Bir Chiffa, Tangier, Morocco 90060</p>
+     </footer>
+   </body>
+   <script>
+      let book=JSON.parse(localStorage.getItem("detail"))
+      let section=document.getElementsByClassName('cards')[0];
+      const title =book.title
+      const description =book.description
+      const cover =book.cover
+      const pdf =book.pdf
+      const author =book.author
+      const releaseDate =book.releaseDate
+      const language = book.language;
+      const genre = book.genre;
+      const publicationPlace = book.publicationPlace;
+      const authorPic = book.authorPic;
+      bookElement=document.createElement('div');
+                     bookElement.className = `book`;
+                     bookElement.innerHTML = `
+                         <h2>${title}</h2>
+                         <div class="container">
+                         <img src="${cover}"><br>
+                         <div class="info">
+                         <p>It was release in :${releaseDate}</p>
+                         <p> author: ${author}</p>
+                         <p> Language: ${language}</p>
+                         <p> Genre: ${genre}</p>
+                         <p> Publication Place: ${publicationPlace}</p>
+                         </div>
+                         </div>
+                         <div class="divs">
+                         <p id="sum">Summary:<br>${description}</p>
+                         <div class="infos">
+                         <h3> ${author}</h3>
+                         <img src="${authorPic}" class="authorPic">
+                         </div>
+                         </div>
+                         <button value="readBook" onclick="readBook(this)">Read Book</button>
+    `;
+    section.appendChild(bookElement)
+    function readBook(button){
+      let books=JSON.parse(localStorage.getItem("detail"))
+      let book= books.pdf;
+      window.location.href=`${book}`
+    } 
+   </script>
+   </html>

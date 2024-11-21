@@ -1,0 +1,123 @@
+{
+  "Books": [
+    {
+      "title": "To Kill a Mockingbird",
+      "description": " A powerful novel about racial injustice, narrated by a young girl, Scout Finch, in the Deep South. It tackles the themes of racial inequality and moral growth, as Scout's father, Atticus Finch, defends a black man accused of raping a white woman.",
+      "cover": "img/ToKillaMockingbird.jpg",
+      "pdf": "https://www.raio.org/TKMFullText.pdf",
+      "author":  "Nelle Harper",
+      "releaseDate": "1960-07-11",
+      "language": "english",
+      "genre": "Southern Gothic Bildungsroman",		
+      "publicationPlace": "United states",
+        "authorPic": "img/author1.jpg"
+    },
+    {
+      "title": "1984",
+      "description":" A dystopian novel set in a totalitarian regime where the government, led by Big Brother, constantly surveils its citizens. The story follows Winston Smith as he struggles against a society that controls every aspect of life, including thoughts and history.",
+      "cover": "img/1984.png",
+      "pdf": "https://rauterberg.employee.id.tue.nl/lecturenotes/DDM110%20CAS/Orwell-1949%201984.pdf",
+      "author": "Eric Arthur",
+      "releaseDate": "1949-06-08",
+      "language": "english",
+   "genre": "Dystopian political fiction social science fiction",
+   "publicationPlace": "United kingdom",
+     "authorPic": "img/author2.jpg"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": " A romantic novel about Elizabeth Bennet, whose quick judgments and misunderstandings about others, especially Mr. Darcy, shape her journey towards love and personal growth. The book explores themes of societal expectations and the importance of character.",
+      "cover": "img/PrideandPrejudice.png",
+      "pdf": "https://giove.isti.cnr.it/demo/eread/Libri/joy/Pride.pdf",
+      "author":"Jane Austen",
+      "releaseDate": "1813-01-28",
+      "language":"english",
+   "genre":" Classic Regency novel Romance novel",
+   "publicationPlace": "United kingdom",
+     "authorPic": "img/author3.webp"
+    },
+    {
+      "title": "The Hobbit",
+      "description": " A fantasy adventure where Bilbo Baggins, a hobbit, reluctantly embarks on a quest to help a group of dwarves reclaim their homeland from the dragon Smaug. Along the way, Bilbo discovers bravery and encounters various mythical creatures.",
+      "cover": "img/theHobbit.webp",
+      "pdf": "https://rsd2-alert-durden-reading-room.weebly.com/uploads/6/7/1/6/6716949/the_hobbit_tolkien.pdf",
+      "author": "J.R.R. Tolkien",
+      "releaseDate": "1937-09-21",
+      "language":"english",
+      "genre":"High fantasy Children's fantasy",
+      "publicationPlace":"United kingdom",
+      "authorPic": "img/author4.jpg"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": " Set in the Roaring Twenties, this novel tells the story of the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan. It explores themes of wealth, love, the American Dream, and the moral decay beneath the surface of glamour and luxury.",
+      "cover": "img/TheGreatGatsby.jpg",
+      "pdf": "https://www.planetebook.com/free-ebooks/the-great-gatsby.pdf",
+      "author": "Scott Fitzgerald",
+      "releaseDate": "1925-04-10",
+      "language":"english",
+      "genre":"Novel",
+      "publicationPlace":"United states",
+        "authorPic": "img/author5.webp"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": " A novel about Holden Caulfield, a disillusioned teenager who wanders New York City after being expelled from his prep school. The story delves into his feelings of alienation, confusion about adulthood, and struggles with mental health.",
+      "cover": "img/TheCatcherintheRye.png",
+      "pdf": "https://giove.isti.cnr.it/demo/eread/Libri/sad/Rye.pdf",
+      "author":"J.D. Salinger",
+      "releaseDate": "1951-07-16",
+      "language":"english",
+      "genre":"Realistic fiction, Coming-of-age fiction",
+      "publicationPlace": "United states",
+        "authorPic": "img/author6.jpg"
+    },
+    {
+      "title": "Brave New World",
+      "description": " A dystopian novel that imagines a future world where society is controlled by technology, and people are conditioned to accept their place in a rigid hierarchy. Individuality is suppressed, and human emotions are regulated by a drug called Soma.",
+      "cover": "img/BraveNewWorld.jpg",
+      "pdf": "https://www.plato-philosophy.org/wp-content/uploads/2016/05/BraveNewWorld-1.pdf",
+      "author":"Aldous Huxley",
+      "releaseDate": "1932-09-01",
+      "language": "english",
+      "genre":"Science fiction, dystopian fiction",
+      "publicationPlace":"United kingdom",
+        "authorPic": "img/author7.jpg"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "description": "Dorian Gray makes a Faustian bargain to remain youthful while his portrait ages, reflecting the corruption of his soul. As Dorian indulges in a life of vice and excess, his portrait grows increasingly grotesque, symbolizing the consequences of his immoral choices.",
+      "cover": "img/ThePictureofDorianGray.jpg",
+      "pdf": "https://johnstoniatexts.x10host.com/homer/odysseyallpdf.pdf",
+      "author":  "Oscar Wilde",
+      "releaseDate": "1890-06-01",
+      "language":"english",
+      "genre":"Philosophical fiction, Gothic fiction, decadent literature",
+      "publicationPlace":"United kingdom",
+        "authorPic": "img/author8.webp"
+    },
+    {
+      "title": "Frankenstein",
+      "description": "A gothic novel about the young scientist Victor Frankenstein, who creates a grotesque creature in an unorthodox scientific experiment, and the consequences of his hubris.",
+      "cover": "img/Frankenstein.webp",
+      "pdf": "https://www.gutenberg.org/files/84/84-h/84-h.htm",
+      "author": "Wollstonecraft",
+      "releaseDate": "1818-01-01",
+      "language": "english",
+      "genre": "Gothic novel, horror fiction, science fiction",
+      "publicationPlace": "United kingdom",
+        "authorPic": "img/author9.jpg"
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "description": "A  philosophical novel by Dostoevsky that examines deep themes of faith, morality, free will, and familial conflict. It revolves around the murder of Fyodor Karamazov and the complex relationships among his sons, each embodying different philosophical views on life and ethics.",
+      "cover": "img/theBrothersKaramazov.webp",
+      "author": "Dostoevsky",
+      "releaseDate": "1880-01-01",
+      "language": "russian",
+      "genre": "Philosophical novel Theological fiction Detective novel",
+      "publicationPlace": "Russia",
+        "authorPic": "img/author10.jpg"
+    }
+  ]
+}
